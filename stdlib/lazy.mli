@@ -37,11 +37,6 @@ type 'a t = 'a CamlinternalLazy.t
    by the pattern matching. In the example above, the suspension [x] is always
    computed.
 
-
-   Note: [lazy_t] is the built-in type constructor used by the compiler
-   for the [lazy] keyword.  You should not use it directly.  Always use
-   [Lazy.t] instead.
-
    Note: [Lazy.force] is not thread-safe.  If you use this module in
    a multi-threaded program, you will need to add some locks.
 
